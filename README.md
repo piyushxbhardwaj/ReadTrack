@@ -1,8 +1,35 @@
-# Philonet Reading Timer
+# ReadTrack
 
-Philonet Reading Timer is a production-quality, modular iOS application designed to help users aggregate links, read articles in a custom interface, and track their reading time. It includes a native Safari Share Extension, an actor-isolated local JSON database, a monotonic reading timer, and a mathematical merge reconciliation engine to handle edge cases like process crashes and background interruptions.
+A production-quality iOS read-it-later application built for the Philonet Reading Timer assignment.
 
 ---
+
+## Demo
+
+https://youtu.be/your-video
+
+---
+
+## Screenshots
+
+| Home | Reader | Debug Panel |
+|------|--------|-------------|
+| *(add image)* | *(add image)* | *(add image)* |
+
+---
+
+## Features
+
+- **Safari Share Extension**: Instantly share link URLs from Safari into your stack.
+- **WKWebView Reader**: Interactive reading view inside the application.
+- **Reading Uptime Tracker**: Measures reading session times using monotonic clock reference.
+- **Interruption Audits**: Auto-pauses on screen locks, incoming phone calls, background states.
+- **Conflict Merge Reconciliation**: Resolves caches with the strict 7-rule merge engine.
+- **Live Debug Panel**: Real-time app state audits and an interactive merge playground.
+- **JSON Actor Persistence**: Thread-safe background storage using actors and App Groups.
+
+---
+
 
 ## Architecture Diagram
 
