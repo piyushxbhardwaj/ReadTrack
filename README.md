@@ -1,6 +1,6 @@
 # ReadTrack
 
-A production-quality **SwiftUI read-it-later application** built for the **Philonet Reading Timer** assignment.
+**ReadTrack** is a SwiftUI-based read-it-later application that allows users to save articles directly from Safari, read them in an integrated web view, and accurately track reading time using a lifecycle-aware timer and a deterministic merge engine that prevents duplicate or regressive time updates.
 
 ![Swift](https://img.shields.io/badge/Swift-5.10-orange)
 ![Platform](https://img.shields.io/badge/iOS-17+-blue)
@@ -21,11 +21,22 @@ A production-quality **SwiftUI read-it-later application** built for the **Philo
 
 ---
 
-## Demo
+## Getting Started
 
-*Coming Soon (Link to staging walkthrough video will be added here).*
+1. Clone this repository: `git clone https://github.com/piyushxbhardwaj/ReadTrack.git`
+2. Open `Philonet.xcodeproj` in Xcode 15+
+3. Configure an **App Group** named `group.com.philonet.ReadingTimer` under target Capabilities for both the main app target and the `ShareExtension` target.
+4. Build and run on an iOS Simulator or physical device.
+5. Share a webpage from Safari and choose **Save to Philonet** in the share sheets.
 
 ---
+
+## Demo
+
+*Coming Soon (Staging walkthrough video will be recorded and linked here).*
+
+---
+
 
 
 ## Tech Stack
