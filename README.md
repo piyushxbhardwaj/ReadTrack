@@ -30,6 +30,21 @@ https://youtu.be/your-video
 
 ---
 
+## Tech Stack
+
+- **Language**: Swift 5.10
+- **UI Framework**: SwiftUI
+- **Architecture**: MVVM (Model-View-ViewModel)
+- **Engine Concurrency**: Swift Actors (`PersistenceManager`)
+- **Reading WebViews**: `WKWebView`
+- **Uptime Timing**: Monotonic System Clock
+- **Extension Hooks**: Share Extension target
+- **Inter-process Sharing**: App Groups container
+- **Local Persistence**: Asynchronous Codable JSON
+
+---
+
+
 
 ## Architecture Diagram
 
