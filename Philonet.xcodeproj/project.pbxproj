@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile Section */
+		BLD000000000000000000001 /* PhilonetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000001 /* PhilonetApp.swift */; };
+		BLD000000000000000000002 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000002 /* Article.swift */; };
+		BLD000000000000000000003 /* ReadingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000003 /* ReadingSession.swift */; };
+		BLD000000000000000000004 /* MergeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000004 /* MergeManager.swift */; };
+		BLD000000000000000000005 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000005 /* PersistenceManager.swift */; };
+		BLD000000000000000000006 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000006 /* TimerService.swift */; };
+		BLD000000000000000000007 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000007 /* HomeViewModel.swift */; };
+		BLD000000000000000000008 /* ReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000008 /* ReaderViewModel.swift */; };
+		BLD000000000000000000009 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000009 /* HomeView.swift */; };
+		BLD000000000000000000010 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000010 /* ReaderView.swift */; };
+		BLD000000000000000000011 /* ArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000011 /* ArticleRow.swift */; };
+		BLD000000000000000000012 /* DebugPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000012 /* DebugPanelView.swift */; };
+		BLD000000000000000000013 /* FileManager+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000013 /* FileManager+Helpers.swift */; };
+		BLD000000000000000000014 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000014 /* Date+Helpers.swift */; };
+		BLD000000000000000000024 /* MergeManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000024 /* MergeManagerTests.swift */; };
+		
+		/* ShareExtension Compiles controller and persistence files */
+		BLD000000000000000000015 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = APP000000000000000000015 /* ShareViewController.swift */; };
+		BLD000000000000000000019 /* Article.swift in Sources (Share) */ = {isa = PBXBuildFile; fileRef = APP000000000000000000002 /* Article.swift */; };
+		BLD000000000000000000020 /* ReadingSession.swift in Sources (Share) */ = {isa = PBXBuildFile; fileRef = APP000000000000000000003 /* ReadingSession.swift */; };
+		BLD000000000000000000021 /* MergeManager.swift in Sources (Share) */ = {isa = PBXBuildFile; fileRef = APP000000000000000000004 /* MergeManager.swift */; };
+		BLD000000000000000000022 /* PersistenceManager.swift in Sources (Share) */ = {isa = PBXBuildFile; fileRef = APP000000000000000000005 /* PersistenceManager.swift */; };
+		BLD000000000000000000023 /* FileManager+Helpers.swift in Sources (Share) */ = {isa = PBXBuildFile; fileRef = APP000000000000000000013 /* FileManager+Helpers.swift */; };
+		
+		/* Embed Share Extension */
+		BLD000000000000000000018 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = APP000000000000000000017 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile Section */
+
+/* Begin PBXContainerItemProxy Section */
+		PRX000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = PROJECT00000000000000000001 /* Project */;
+			proxyType = 1;
+			remoteGlobalIDString = TRG000000000000000000002 /* ShareExtension */;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy Section */
+
+/* Begin PBXCopyFilesBuildPhase Section */
+		CPY000000000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BLD000000000000000000018 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase Section */
+
+/* Begin PBXFileReference Section */
+		APP000000000000000000001 /* PhilonetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhilonetApp.swift; sourceTree = "<group>"; };
+		APP000000000000000000002 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		APP000000000000000000003 /* ReadingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingSession.swift; sourceTree = "<group>"; };
+		APP000000000000000000004 /* MergeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeManager.swift; sourceTree = "<group>"; };
+		APP000000000000000000024 /* MergeManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeManagerTests.swift; sourceTree = "<group>"; };
+		APP000000000000000000005 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		APP000000000000000000006 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+		APP000000000000000000007 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		APP000000000000000000008 /* ReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewModel.swift; sourceTree = "<group>"; };
+		APP000000000000000000009 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		APP000000000000000000010 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		APP000000000000000000011 /* ArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRow.swift; sourceTree = "<group>"; };
+		APP000000000000000000012 /* DebugPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPanelView.swift; sourceTree = "<group>"; };
+		APP000000000000000000013 /* FileManager+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Helpers.swift"; sourceTree = "<group>"; };
+		APP000000000000000000014 /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+
+		
+		/* Share Extension Files */
+		APP000000000000000000015 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		APP000000000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		
+		/* Output products */
+		APP0000000000000000000100 /* Philonet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Philonet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		APP000000000000000000017 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference Section */
+
+/* Begin PBXFrameworksBuildPhase Section */
+		FRM000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FRM000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase Section */
+
+/* Begin PBXGroup Section */
+		GRP000000000000000000001 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				GRP000000000000000000002 /* Philonet */,
+				GRP000000000000000000003 /* ShareExtension */,
+				GRP000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000002 /* Philonet */ = {
+			isa = PBXGroup;
+			children = (
+				GRP000000000000000000005 /* App */,
+				GRP000000000000000000006 /* Models */,
+				GRP000000000000000000007 /* Services */,
+				GRP000000000000000000008 /* ViewModels */,
+				GRP000000000000000000009 /* Views */,
+				GRP000000000000000000010 /* Utilities */,
+				GRP000000000000000000011 /* Extensions */,
+			);
+			path = Philonet;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				APP000000000000000000001 /* PhilonetApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				APP000000000000000000002 /* Article.swift */,
+				APP000000000000000000003 /* ReadingSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				APP000000000000000000004 /* MergeManager.swift */,
+				APP000000000000000000024 /* MergeManagerTests.swift */,
+				APP000000000000000000005 /* PersistenceManager.swift */,
+				APP000000000000000000006 /* TimerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				APP000000000000000000007 /* HomeViewModel.swift */,
+				APP000000000000000000008 /* ReaderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000009 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				APP000000000000000000009 /* HomeView.swift */,
+				APP000000000000000000010 /* ReaderView.swift */,
+				APP000000000000000000011 /* ArticleRow.swift */,
+				APP000000000000000000012 /* DebugPanelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000010 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				APP000000000000000000013 /* FileManager+Helpers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000011 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				APP000000000000000000014 /* Date+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000003 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				APP000000000000000000015 /* ShareViewController.swift */,
+				APP000000000000000000016 /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		GRP000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				APP0000000000000000000100 /* Philonet.app */,
+				APP000000000000000000017 /* ShareExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup Section */
+
+/* Begin PBXNativeTarget Section */
+		TRG000000000000000000001 /* Philonet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFG000000000000000000001 /* Build configuration list for PBXNativeTarget "Philonet" */;
+			buildPhases = (
+				SRC000000000000000000001 /* Sources */,
+				FRM000000000000000000001 /* Frameworks */,
+				CPY000000000000000000001 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEP000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = Philonet;
+			productName = Philonet;
+			productReference = APP0000000000000000000100 /* Philonet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		TRG000000000000000000002 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFG000000000000000000002 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				SRC000000000000000000002 /* Sources */,
+				FRM000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = APP000000000000000000017 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget Section */
+
+/* Begin PBXProject Section */
+		PROJECT00000000000000000001 /* Project */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TRG000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					TRG000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CFG000000000000000000003 /* Build configuration list for PBXProject "Philonet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GRP000000000000000000001 /* Root */;
+			productRefGroup = GRP000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				TRG000000000000000000001 /* Philonet */,
+				TRG000000000000000000002 /* ShareExtension */,
+			);
+		};
+/* End PBXProject Section */
+
+/* Begin PBXSourcesBuildPhase Section */
+		SRC000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BLD000000000000000000001 /* PhilonetApp.swift in Sources */,
+				BLD000000000000000000002 /* Article.swift in Sources */,
+				BLD000000000000000000003 /* ReadingSession.swift in Sources */,
+				BLD000000000000000000004 /* MergeManager.swift in Sources */,
+				BLD000000000000000000024 /* MergeManagerTests.swift in Sources */,
+				BLD000000000000000000005 /* PersistenceManager.swift in Sources */,
+				BLD000000000000000000006 /* TimerService.swift in Sources */,
+				BLD000000000000000000007 /* HomeViewModel.swift in Sources */,
+				BLD000000000000000000008 /* ReaderViewModel.swift in Sources */,
+				BLD000000000000000000009 /* HomeView.swift in Sources */,
+				BLD000000000000000000010 /* ReaderView.swift in Sources */,
+				BLD000000000000000000011 /* ArticleRow.swift in Sources */,
+				BLD000000000000000000012 /* DebugPanelView.swift in Sources */,
+				BLD000000000000000000013 /* FileManager+Helpers.swift in Sources */,
+				BLD000000000000000000014 /* Date+Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		SRC000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BLD000000000000000000015 /* ShareViewController.swift in Sources */,
+				BLD000000000000000000019 /* Article.swift in Sources (Share) */,
+				BLD000000000000000000020 /* ReadingSession.swift in Sources (Share) */,
+				BLD000000000000000000021 /* MergeManager.swift in Sources (Share) */,
+				BLD000000000000000000022 /* PersistenceManager.swift in Sources (Share) */,
+				BLD000000000000000000023 /* FileManager+Helpers.swift in Sources (Share) */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase Section */
+
+/* Begin PBXTargetDependency Section */
+		DEP000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = TRG000000000000000000002 /* ShareExtension */;
+			targetProxy = PRX000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency Section */
+
+/* Begin XCBuildConfiguration Section */
+		CONF000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.philonet.ReadingTimer;
+				PRODUCT_NAME = Philonet;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CONF000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.philonet.ReadingTimer;
+				PRODUCT_NAME = Philonet;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CONF000000000000000000004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.philonet.ReadingTimer.ShareExtension;
+				PRODUCT_NAME = SaveToPhilonet;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CONF000000000000000000005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.philonet.ReadingTimer.ShareExtension;
+				PRODUCT_NAME = SaveToPhilonet;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CONF000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_REPLAY = YES;
+				CLANG_WARN_DOCUMENTATION_OBJC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_ACTUAL = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CONF000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_REPLAY = YES;
+				CLANG_WARN_DOCUMENTATION_OBJC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration Section */
+
+/* Begin XCConfigurationList Section */
+		CFG000000000000000000001 /* Build configuration list for PBXNativeTarget "Philonet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CONF000000000000000000001 /* Debug */,
+				CONF000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFG000000000000000000002 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CONF000000000000000000004 /* Debug */,
+				CONF000000000000000000005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFG000000000000000000003 /* Build configuration list for PBXProject "Philonet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CONF000000000000000000007 /* Debug */,
+				CONF000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList Section */
+	};
+	rootObject = PROJECT00000000000000000001 /* Project */;
+}
