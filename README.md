@@ -1,34 +1,32 @@
 # ReadTrack
 
-A production-quality iOS read-it-later application built for the Philonet Reading Timer assignment.
+A production-quality **SwiftUI read-it-later application** built for the **Philonet Reading Timer** assignment.
+
+![Swift](https://img.shields.io/badge/Swift-5.10-orange)
+![Platform](https://img.shields.io/badge/iOS-17+-blue)
+![Architecture](https://img.shields.io/badge/MVVM-Architecture-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## Highlights
+
+- **Safari Share Extension**: Instantly share link URLs from Safari into your stack.
+- **WKWebView Reader**: Interactive reading view inside the application.
+- **Reading Time Tracking**: Measures reading session times using monotonic clock reference.
+- **Smart Merge Engine**: Resolves caches with the strict 7-rule merge engine.
+- **Debug Panel**: Real-time app state audits and an interactive merge playground.
+- **Swift Concurrency (Actors)**: Thread-safe background storage using actors and App Groups.
+- **MVVM Architecture**: Decoupled, clean separation of concern patterns.
 
 ---
 
 ## Demo
 
-https://youtu.be/your-video
+*Coming Soon (Link to staging walkthrough video will be added here).*
 
 ---
 
-## Screenshots
-
-| Home | Reader | Debug Panel |
-|------|--------|-------------|
-| *(add image)* | *(add image)* | *(add image)* |
-
----
-
-## Features
-
-- **Safari Share Extension**: Instantly share link URLs from Safari into your stack.
-- **WKWebView Reader**: Interactive reading view inside the application.
-- **Reading Uptime Tracker**: Measures reading session times using monotonic clock reference.
-- **Interruption Audits**: Auto-pauses on screen locks, incoming phone calls, background states.
-- **Conflict Merge Reconciliation**: Resolves caches with the strict 7-rule merge engine.
-- **Live Debug Panel**: Real-time app state audits and an interactive merge playground.
-- **JSON Actor Persistence**: Thread-safe background storage using actors and App Groups.
-
----
 
 ## Tech Stack
 
