@@ -228,6 +228,10 @@ public struct DebugPanelView: View {
                 }
             }
             .onAppear(perform: startPanelUpdates)
+            .onDisappear {
+                // Break closure captures to prevent leaks of the dismissed view environment
+                timerService.onTick = nil
+            }
         }
     }
     

@@ -17,6 +17,7 @@ public protocol TimerProviding: AnyObject {
 
 /// Service that manages the reading timer using a monotonic system clock,
 /// handling interruptions and backgrounding state transitions.
+@MainActor
 public class TimerService: TimerProviding {
     private let persistenceManager: any PersistenceProviding
     
@@ -44,6 +45,8 @@ public class TimerService: TimerProviding {
     }
     
     deinit {
+        // NotificationCenter removal and timer invalidation
+        // Note: deinit cannot run async, but we can safely remove observers
         NotificationCenter.default.removeObserver(self)
         timer?.invalidate()
     }
@@ -90,22 +93,9 @@ public class TimerService: TimerProviding {
     @objc private func appWillTerminate() {
         if currentSession != nil {
             pauseSession()
-            // Synchronous block run loop wrapper is not strictly needed since appWillResignActive
-            // already triggered a save, but we try to do a fast write
-            let session = currentSession
-            let seconds = currentSessionSeconds
-            if let session = session, seconds > 0 {
-                let sem = DispatchSemaphore(value: 0)
-                Task {
-                    if var article = await self.persistenceManager.getCachedArticle(id: session.articleId) {
-                        article.readingTime += seconds
-                        article.lastUpdated = Date()
-                        _ = try? await self.persistenceManager.updateArticle(article)
-                    }
-                    sem.signal()
-                }
-                _ = sem.wait(timeout: .now() + 0.5)
-            }
+            // Active time has already been saved during the active -> inactive transition (willResignActive).
+            // We clean up references to prevent leaks upon process shutdown.
+            currentSession = nil
         }
     }
     

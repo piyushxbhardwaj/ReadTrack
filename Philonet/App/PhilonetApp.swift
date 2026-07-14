@@ -8,7 +8,7 @@ struct PhilonetApp: App {
     private let persistenceManager: any PersistenceProviding
     private let timerService: any TimerProviding
     
-    public init() {
+    init() {
         let persistence = PersistenceManager()
         self.persistenceManager = persistence
         self.timerService = TimerService(persistenceManager: persistence)

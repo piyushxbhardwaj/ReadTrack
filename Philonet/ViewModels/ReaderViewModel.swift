@@ -81,4 +81,9 @@ public class ReaderViewModel: ObservableObject {
         self.loadError = error
         self.isLoading = false
     }
+    
+    deinit {
+        timerService.onTick = nil
+        timerService.onAutosave = nil
+    }
 }

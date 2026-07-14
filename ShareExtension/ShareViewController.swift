@@ -71,18 +71,22 @@ public class ShareViewController: UIViewController {
             if provider.hasItemConformingToTypeIdentifier(urlType) {
                 group.enter()
                 provider.loadItem(forTypeIdentifier: urlType, options: nil) { (item, error) in
-                    defer { group.leave() }
-                    if let url = item as? URL {
-                        sharedURL = url
+                    DispatchQueue.main.async {
+                        if let url = item as? URL {
+                            sharedURL = url
+                        }
+                        group.leave()
                     }
                 }
             }
             if provider.hasItemConformingToTypeIdentifier(textType) {
                 group.enter()
                 provider.loadItem(forTypeIdentifier: textType, options: nil) { (item, error) in
-                    defer { group.leave() }
-                    if let text = item as? String {
-                        sharedTitle = text
+                    DispatchQueue.main.async {
+                        if let text = item as? String {
+                            sharedTitle = text
+                        }
+                        group.leave()
                     }
                 }
             }
